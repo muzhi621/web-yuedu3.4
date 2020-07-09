@@ -160,7 +160,6 @@ export default {
             that.loading.close();
             that.$store.commit("setConnectType", "danger");
             that.$store.commit("setConnectStatus", "点击设置后端 url 与 端口");
-            that.$store.commit("setConnectStatus", "连接失败");
             that.$message.error("后端连接失败");
             that.$store.commit("setNewConnect", false);
             throw error;
